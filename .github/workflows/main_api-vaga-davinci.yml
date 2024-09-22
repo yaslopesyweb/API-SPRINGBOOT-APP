@@ -51,3 +51,10 @@ jobs:
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_F62AE64D17764C9DB0F42E80C66830AA }}
           subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_4EA08397D2FD435598C1F8FD8014B957 }}
 
+      - name: Deploy to Azure Web App
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v3
+        with:
+          app-name: 'api-vaga-davinci'
+          package: '*.jar'  # Caminho completo
+          slot-name: 'Production'

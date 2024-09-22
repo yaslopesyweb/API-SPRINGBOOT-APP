@@ -49,4 +49,5 @@ jobs:
         with:
           client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_FC779FBF758848248636EC02A4D47579 }}
           tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_F62AE64D17764C9DB0F42E80C66830AA }}
-          subscription-id: ${{ secrets.AZURE }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_4EA08397D2FD435598C1F8FD8014B957 }}
+
